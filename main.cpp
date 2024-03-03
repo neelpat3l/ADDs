@@ -14,9 +14,9 @@ int main() {
     // Play the game
     Player* winner = referee.refGame(&player1, &player2);
 
-    //if (winner != nullptr) {
-    //    std::cout << "Winner: " << winner->getName() << std::endl;
-    //}
+    if (winner != nullptr) {
+        std::cout << "Winner: " << winner->getName() << std::endl;
+    }
 
     return 0;
 }
