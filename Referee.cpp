@@ -1,6 +1,7 @@
 #include "Referee.h"
 #include "Move.h"
-#include "gamerules.h" // Include GameCommon.h to use GameResult enum
+#include "gamerules.h"
+#include "gamecommon.h"
 #include <iostream>
 
 Referee::Referee() {}
@@ -13,15 +14,15 @@ Player* Referee::refGame(Player* player1, Player* player2) {
     delete move1;
     delete move2;
 
-    switch (result) {
-        case GameResult::Tie:
-            std::cout << "It's a Tie." << std::endl;
-            return nullptr;
-        case GameResult::Player1Wins:
-            std::cout << player1->getName() << " Wins." << std::endl;
-            return player1;
-        case GameResult::Player2Wins:
-            std::cout << player2->getName() << " Wins." << std::endl;
-            return player2;
-    }
+  if (result == GameResult::Tie) {
+    std::cout << "It's a Tie." << std::endl;
+    return nullptr;
+} else if (result == GameResult::Player1Wins) {
+    std::cout << player1->getName() << " Wins." << std::endl;
+    return player1;
+} else if (result == GameResult::Player2Wins) {
+    std::cout << player2->getName() << " Wins." << std::endl;
+    return player2;
+}
+
 }

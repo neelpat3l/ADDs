@@ -2,12 +2,7 @@
 #define GAMERULES_H
 
 #include "Move.h"
-
-enum class GameResult {
-    Tie,
-    Player1Wins,
-    Player2Wins
-};
+#include "gamecommon.h"
 
 class GameRules {
 public:
