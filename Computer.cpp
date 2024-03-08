@@ -2,6 +2,6 @@
 
 Computer::Computer() : Player("Computer") {};
 
-char Computer:: makeMove() {
-    return 'R';
+Move* Computer:: makeMove() {
+    return nullptr;
 };

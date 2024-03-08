@@ -8,7 +8,7 @@ class Human : public Player {
     //Defualt Construtor
     Human(const std::string & name = "Human");
     //Override Pure Virtual funtion from player.h
-    char makeMove() override;
+    Move* makeMove() override;
 };
 
 #endif

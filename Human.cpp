@@ -3,9 +3,9 @@
 //Constructor
 Human::Human(const std::string& name) : Player(name) {}
 //Prompt the input message to the human player
-char Human::makeMove() {
+Move* Human::makeMove() {
     char move;
-    std::cout << "Enter move(R, P, S): ";
+    std::cout << "Enter move(Rock, Paper, Scissors, Robot, Monkey, Pirate, Ninja, Zombie): ";
     std::cin >> move;
-    return move;
+    return nullptr;
 }
