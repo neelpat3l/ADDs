@@ -11,12 +11,12 @@ Paper::Paper(){
 
 string Paper::winner(Move* computerMove){
     if(computerMove->getName() == "Scissors"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Paper"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

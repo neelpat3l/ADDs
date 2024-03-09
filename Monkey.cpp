@@ -11,12 +11,12 @@ Monkey::Monkey(){
 
 string Monkey::winner(Move* computerMove){
     if(computerMove->getName() == "Ninja"||computerMove->getName() == "Robot"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Monkey"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

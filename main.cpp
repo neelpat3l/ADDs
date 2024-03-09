@@ -10,12 +10,14 @@ using namespace std;
 
 int main(){
     Human* human = new Human();
-    Human* humanOther = new Human();
-    Referee* referee = new Referee();
-    //human->makeMove();
-    //computer->makeMove();
 
+    Human* humanOther = new Human();
+    
+    Referee* referee = new Referee();
+    
     Player*winner = referee->refGame(human, humanOther);
+    
     cout << winner->getName() << endl;
+    
     return 0;
 }

@@ -17,11 +17,11 @@ Player*Referee::refGame(Player * player1, Player * player2){
     Move* player1Move = player1->makeMove();
     Move* player2Move = player2->makeMove();
     string checkWinner = player1Move->winner(player2Move);        
-    if ( checkWinner == "winner" )
+    if ( checkWinner == "Winner." )
     {
         return player1;
     }
-    else if(checkWinner == "tie"){
+    else if(checkWinner == "Tie!"){
         cout<<"Tie"<<endl;
         return NULL;
     }

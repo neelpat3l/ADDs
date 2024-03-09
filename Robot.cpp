@@ -11,12 +11,12 @@ Robot::Robot(){
 
 string Robot::winner(Move* computerMove){
     if(computerMove->getName() == "Ninja"||computerMove->getName() == "Zombie"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Robot"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

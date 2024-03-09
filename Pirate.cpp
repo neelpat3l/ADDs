@@ -11,12 +11,12 @@ Pirate::Pirate(){
 
 string Pirate::winner(Move* computerMove){
     if(computerMove->getName() == "Robot"||computerMove->getName() == "Monkey"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Pirate"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

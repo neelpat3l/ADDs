@@ -11,12 +11,12 @@ Ninja::Ninja(){
 
 string Ninja::winner(Move* computerMove){
     if(computerMove->getName() == "Pirate"||computerMove->getName() == "Zombie"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Ninja"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

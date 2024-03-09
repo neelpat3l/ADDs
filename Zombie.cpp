@@ -11,12 +11,12 @@ Zombie::Zombie(){
 
 string Zombie::winner(Move* computerMove){
     if(computerMove->getName() == "Pirate"||computerMove->getName() == "Monkey"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Zombie"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }

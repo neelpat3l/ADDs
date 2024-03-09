@@ -11,12 +11,12 @@ Rock::Rock(){
 
 string Rock::winner(Move* computerMove){
     if(computerMove->getName() == "Scissors"){
-        return "winner";
+        return "Winner.";
     }
     else if(computerMove->getName() == "Rock"){
-        return "tie";
+        return "Tie!";
     }
     else{ 
-        return "loser";
+        return "Loser.";
     }
 }
