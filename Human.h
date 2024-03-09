@@ -1,14 +1,19 @@
 #ifndef HUMAN_H
 #define HUMAN_H
 
+#include<iostream>
+
 #include "Player.h"
+#include "Move.h"
+#include "moveMaker.h"
 
-class Human : public Player {
+using namespace std;
+
+class Human : public Player{
     public:
-    //Defualt Construtor
-    Human(const std::string & name = "Human");
-    //Override Pure Virtual funtion from player.h
-    Move* makeMove() override;
+        Human();
+        Human(string name);
+        string getName(); 
+        Move* makeMove();
 };
-
-#endif
+#endif 

@@ -1,22 +1,21 @@
-#include <iostream>
+#include "Player.h"
 #include "Human.h"
-#include "Computer.h"
 #include "Referee.h"
+#include "Computer.h"
 
-int main() {
-    // Create players
-    Human player1("Human");
-    Computer player2;
+#include <string>
+#include <iostream>
 
-    // Create referee
-    Referee referee;
+using namespace std;
 
-    // Play the game
-    Player* winner = referee.refGame(&player1, &player2);
+int main(){
+    Human* human = new Human();
+    Human* humanOther = new Human();
+    Referee* referee = new Referee();
+    //human->makeMove();
+    //computer->makeMove();
 
-    if (winner != nullptr) {
-        std::cout << "Winner: " << winner->getName() << std::endl;
-    }
-
+    Player*winner = referee->refGame(human, humanOther);
+    cout << winner->getName() << endl;
     return 0;
 }

@@ -1,7 +1,14 @@
+#include <iostream>
+#include <string>
+
 #include "Player.h"
 
-Player::Player(const std::string& name) : name(name) {}
+using namespace std;
 
-std::string Player::getName() {
-    return name;
+Player::Player(){
+    name = "Human";
+}
+
+string Player::getName(){
+    return this->name;
 }

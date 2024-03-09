@@ -1,12 +1,22 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include "Player.h"
+#include<iostream>
 
-class Computer : public Player  {
+#include "Player.h"
+#include "Move.h"
+
+using namespace std;
+class Computer : public Player{
+    private:
+        string computerName;
+       string computerMove;
     public:
-    Move* makeMove() override;
-    Computer();
+        Computer(){
+            name="Computer";
+        }
+        string getName();
+        Move* makeMove(); 
 };
 
-#endif
+#endif 

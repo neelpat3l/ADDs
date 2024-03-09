@@ -1,16 +1,18 @@
 #ifndef REFEREE_H
 #define REFEREE_H
 
-#include "Player.h"
-#include "Move.h"
-#include "gamerules.h"
+#include<iostream>
 
-class Referee{
-private:
-    GameRules* gameRules;
-public:
-    Referee( ); // constructor
-    Player * refGame(Player * player1, Player * player2);
+#include "Human.h"
+#include "Player.h"
+#include "Computer.h"
+
+#include<string>
+
+class Referee {
+    public:
+        Referee(); 
+        Player*refGame(Player * player1, Player * player2);
 };
 
-#endif
+#endif 

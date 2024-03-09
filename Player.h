@@ -1,21 +1,20 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <string>
+#include "Move.h"
 
-// Forward declaration of Move class
-class Move;
+#include<iostream>
+#include<string>
 
-class Player {
-protected:
-    std::string name;
+using namespace std;
 
-public:
-    // Default constructor
-    Player(const std::string& name = "Human");
-    // Pure virtual function
-    virtual Move* makeMove() = 0;
-    std::string getName();
+class Player{
+    protected:
+        string name;
+    public:
+        Player();
+        virtual Move* makeMove()=0;
+        string getName();
 };
 
-#endif
+#endif 
