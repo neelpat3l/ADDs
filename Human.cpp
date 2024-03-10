@@ -3,7 +3,7 @@
 #include "Human.h"
 #include "Player.h"
 #include "Move.h"
-#include "moveMaker.h"
+#include "moveSelector.h"
 
 using namespace std;
 
@@ -21,7 +21,7 @@ string Human::getName(){
 Move* Human::makeMove(){
     string playerChoice;
     cin >> playerChoice;
-    moveMaker temp;
+    moveSelector temp;
     Move* playerMove = temp.createMove(playerChoice);
     return playerMove;
 };

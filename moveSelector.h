@@ -1,5 +1,5 @@
-#ifndef MOVEMAKER_H
-#define MOVEMAKER_H
+#ifndef MOVESELECTOR_H
+#define MOVESELECTOR_H
 
 #include "Move.h"
 #include "Rock.h"
@@ -11,7 +11,7 @@
 #include "Ninja.h"
 #include "Pirate.h"
 
-class moveMaker{
+class moveSelector{
     public:
         Move* createMove(string move);
 };

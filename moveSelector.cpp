@@ -1,6 +1,6 @@
-#include "moveMaker.h"
+#include "moveSelector.h"
 
-Move* moveMaker::createMove(string move) {
+Move* moveSelector::createMove(string move) {
     Move*chosenMove;
     if(move=="Zombie"){
         chosenMove = new Zombie();
